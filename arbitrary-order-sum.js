@@ -5,4 +5,4 @@
 //  sum(5)(3)(8)(1)(2)(603)()
 //  > 622
 
-sum=(x,y=[])=>x?(y.push(x),x=>sum(x,y)):eval(y.join`+`)
+sum=x=>y=>y||y==0?sum(x+y):x
